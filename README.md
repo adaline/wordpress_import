@@ -18,7 +18,7 @@ Usage
 require 'wordpress_import'
 
 # Read file
-content = File.read('tmp/fixed_export.xml')
+content = File.read('/tmp/wordpress_export.xml')
 # Parse file
 wp = WordpressImport.new(content)
 
@@ -26,9 +26,9 @@ wp = WordpressImport.new(content)
 authors = wp.authors
 tags = wp.tags
 categories = wp.categories
-attachments = wp.items.select { |i| i.class == Wordpress::Attachment }
-about_pages = wp.items.select { |i| i.class == Wordpress::About }
-posts = wp.items.select { |i| i.class == Wordpress::Post }
+attachments = wp.items.select { |i| i.class == WordpressImport::Attachment }
+about_pages = wp.items.select { |i| i.class == WordpressImport::About }
+posts = wp.items.select { |i| i.class == WordpressImport::Post }
 ```
 ***
 Things to look out for
