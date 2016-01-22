@@ -1,7 +1,7 @@
 WordpressImport
 ===
 
-WordpressImport parses [Wordpress](http://www.wordpress.org) blog export files into for use in Ruby, for exaple to replace an old Wordpress site with a shiny new Ruby one!
+WordpressImport parses [WordPress](http://www.wordpress.org) export files for use in Ruby, for example to replace an old WordPress site with a shiny new Ruby one!
 ***
 Installation
 ---
@@ -35,4 +35,4 @@ Things to look out for
 ---
 * This gem will load all data into memory, although I had no problems with this and chose to keep it simple - with a big enough export you may run into issues.
 
-* There is no test suite, there is not much to test. The code in this gem is very simple and I hope the clean layout will help you change/expand this for your own needs.
+* There is no test suite, there is not much to test. The code in this gem is very simple and I hope the clean layout will make it trivial for you to change this code to suit your needs.
